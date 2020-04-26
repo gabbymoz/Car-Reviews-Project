@@ -13,7 +13,7 @@
 #
 # Firebase Vars - from app settings
 PROJECT_ID='car-reviews-406b3'
-COLLECTION_ID='messages'
+COLLECTION_ID='categories'
 API_KEY='AIzaSyBdHlHn0CYo7HMgF8YuhFfT7UqZRW-lLKo'
 TOKEN=''
 
