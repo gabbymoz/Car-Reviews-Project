@@ -1,80 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Car Review</title>
+    <title>Messages from FireStore Example</title>
 </head>
 
 <body>
+
     <!-- Navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top rounded">
         <div class="container">
-            <a class="navbar-brand" href="#">Car Reviews</a>
+            <a class="navbar-brand" href="index.html">Car Reviews</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Messages</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="bmw.html">Messages
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="home.html">Home</a>
-						</li>
-                    <li class="nav-item">
-					<a class="nav-link" href="reviews.html">Reviews</a>
                     </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="aboutus.html">About Us
-                          <span class="sr-only">(current)</span>
-                      </a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav> <!-- end Nav bar -->
 
     <!-- Container for page content-->
-<body>
+    <div class="container">
+        <div class="row">
+            <h2 class="mt-5">Message List</h2>
+        </div>
+        <!-- content row-->
+            <div class="row">
+            <!-- left column-->
+            <div class="col-sm-2">
+                <div id="categoryList" class="list-group">
+                    <a href="message.html" class="list-group-item list-group-item-action">Show all</a>
+                    <a href="mercedes.html" class="list-group-item list-group-item-action">Mercedes-Benz</a>
+                    <a href="ferrari.html" class="list-group-item list-group-item-action">Ferrari</a>
+                    <a href="bmw.html" class="list-group-item list-group-item-action">BMW</a>
+                </div>
+            </div> <!-- end left col-->
+            <!-- Right column -->
+            <div class="col-sm-10">
+                <div id="products">
+                    <!-- Table of messages -->
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Car Brand</th>
+                                <th>Engine</th>
+                                <th>Body Type</th>
+                                <th>Rating</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productRows">
+                            <!-- Rows to be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div> <!-- end right col-->
+        </div> <!-- end content row -->
+    </div> <!-- end container-->
 
-	<div class="column">
-        <img src="photos/12.jpg" class="rounded float-left" alt="nisan" style="height: 300px; width: 40%; padding-top: 5%;">
-        <img src="photos/25475287073_60c2b3a502_b.jpg" class="rounded float-right" alt="audi" style="height: 300px; width: 40%; padding-top: 5%;">
-    </div>
-
-    <div class="column" style="padding-top: 2.5%; width:80%; padding-left: 20%; padding-top: 25%;" id="contact">
-		<h2 class="w3-wide" style="text-align: center;">ABOUT US</h2>
-		<p class="w3-opacity" ><i>Car Reviews is Ireland's newest website that allows you to view the latest car reviews and ratings online from a range of manufacturers before you buy. You can also subscribe to our mailing list using the form below to receive weekly reviews and view them on your phone, tablet or computer.</i></p>
-        <h3 class="w3-wide" style="text-align: center; padding-top: 15px;">CONTACT US </h3>
-        <p class="w3-opacity" style="position: relative; padding-top: 15px; padding-bottom: 15px; padding-left: 35%;"><i>Any questions? Drop us a note!</i></p>
-        <div class="w3-row w3-padding-32" style="position: relative; padding-bottom: 20%; padding-left: 35%;">
-          <div class="w3-col m6 w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker"></i> Dublin, IRE<br>
-            <i class="fa fa-phone"></i> Phone: +00 1234567<br>
-            <i class="fa fa-envelope"> </i> Email: email@mytudublin.ie<br>
-    </div>
-
-      <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge" style="position:fixed; bottom: 0%;">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p class="w3-medium">Powered by Gabriela And Stefano</a></p>
-      </footer>
-
-
-    <!-- Load CSS + JavaScript at end of page body -->
-
-    <!-- Load site CSS -->
-    <link rel="stylesheet" href="css/style.css">
 
     <!--load icon library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Load CSS + JavaScript at end of page body -->
+    <!--load icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Load site CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Load BootStrap 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -105,9 +115,7 @@
     <script src="javascript/firestore.js"></script>
 
     <!-- Message load and display functions -->
-    <script src="javascript/messages.js"></script>
-
-
+    <script src="javascript/products.js"></script>
 
 </body>
 

@@ -72,12 +72,12 @@ function onMessageArrived(message) {
   messageList.innerHTML = `<li class="list-group-item">
                               <b>Date:</b> ${msgArr[1]}
                               <b>From:</b> ${msgArr[0]}
-                              <b>Sender:</b> ${msgArr[2]}
-                              <b>CarBrand:</b> ${msgArr[3]}
-                              <b>EngineType:</b> ${msgArr[4]}
-                              <b>BodyType:</b> ${msgArr[5]}
-                              <b>Rating:</b> ${msgArr[6]}
-                              <b>Price:</b> ${msgArr[7]}
+                              <b>Sender:</b> ${msgArr[0]}
+                              <b>CarBrand:</b> ${msgArr[2]}
+                              <b>EngineType:</b> ${msgArr[3]}
+                              <b>BodyType:</b> ${msgArr[4]}
+                              <b>Rating:</b> ${msgArr[5]}
+                              <b>Price:</b> ${msgArr[6]}
                           </li>
   ${messageList.innerHTML}`;
 }
