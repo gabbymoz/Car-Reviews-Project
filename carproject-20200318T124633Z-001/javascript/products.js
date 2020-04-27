@@ -113,7 +113,7 @@ function displayCategories(categories) {
   
   // map the array to return a list item for each category in the array
   const items = categories.map(category => {
-    return `<a href="index2 (2).html" class="list-group-item list-group-item-action" onclick="updateProducts('${category.id}')">${category.id}</a>`;
+    return `<a href="#" class="list-group-item list-group-item-action" onclick="updateProducts('${category.id}')">${category.id}</a>`;
   });
 
   // Add an All categories link at the start (unshift inserts at start of array)

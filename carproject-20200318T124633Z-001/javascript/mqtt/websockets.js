@@ -71,6 +71,7 @@ function onMessageArrived(message) {
   // Add to the page by adding to start ofthe page element 
   messageList.innerHTML = `<li class="list-group-item">
                               <b>Date:</b> ${msgArr[1]}
+                              <b>From:</b> ${msgArr[0]}
                               <b>Sender:</b> ${msgArr[0]}
                               <b>CarBrand:</b> ${msgArr[2]}
                               <b>EngineType:</b> ${msgArr[3]}
